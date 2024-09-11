@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+
+.navbar{
+    background-color: black;
+    color:white;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-links{
+   width: 25%;    
+  display: flex; 
+  justify-content: space-around; 
+  height: 80%;
+  >li{
+    list-style: none;
+   font-size: 22px;
+  }
+
+}
+
+.reg{
+    margin-top: 45%;
+    width: 150%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 14px;
+    border: none;
+   
+}
