@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./styles/signup.css"
 import api from './utils/AxiosInstance';
 import { ToastContainer,toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
 const [username,setUsername]=useState("");
@@ -46,6 +47,7 @@ const handleClick=()=>{
             <input type="text" placeholder='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
             <input type="text" placeholder='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
             <button onClick={handleClick}>Sign Up</button>
+            <span>Already a user <Link to={"/login"}>Login</Link></span>
         </div>
     </div>
     </>

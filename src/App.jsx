@@ -5,6 +5,8 @@ import Index from "./components/Index"
 import Footer from "./components/sharedComponents/Footer"
 import Signup from "./components/Signup";
 import 'react-toastify/dist/ReactToastify.css'
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
 
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
 
 <Routes>
 <Route path="/" element={<Index/>}/>
-<Route path="signup" element={<Signup/>}/>
+<Route path="/signup" element={<Signup/>}/>
+<Route path="/login" element={<Login/>}/>
+<Route path="/dashboard" element={<Dashboard/>}/>
 </Routes>
 
 

@@ -10,6 +10,12 @@ body{
     padding-right: 2%;
     display: flex;
     justify-content: space-between;
+    >.logo{
+        >a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+    }
     
 }
 
@@ -21,6 +27,10 @@ body{
   >li{
     list-style: none;
    font-size: 22px;
+   >a{
+    color: aliceblue;
+    text-decoration: none;
+   }
   }
 
 }
@@ -34,5 +44,6 @@ body{
     color: white;
     font-size: 14px;
     border: none;
+    cursor: pointer;
    
 }

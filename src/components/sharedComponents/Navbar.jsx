@@ -1,23 +1,24 @@
 import React from 'react'
 import "../styles/navbar.css"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
    <>
    <nav className='navbar'>
     <div className="logo">
-        <h1>LOGO</h1>
+        <Link to={"/"}><h1>LOGO</h1></Link>
     </div>
   
         <ul className='nav-links'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link>About</Link></li>
+            <li><Link>Contact</Link></li>
         </ul>
     
 
     <div>
-        <button className='reg'>Login</button>
+        <Link to={"/login"}><button className='reg'>Login</button></Link>
     </div>
 
    </nav>
